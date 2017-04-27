@@ -6,6 +6,6 @@
 
 	{{#each model.songs as |song|}}
 		{{song.title}}
-		<span class="rating pull-right">{{song.rating}}</span>
+		{{star-rating rating=song.rating}}
 	{{/each}}
 </ul>
