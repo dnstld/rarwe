@@ -8,7 +8,7 @@
 		<li class="list-group-item song">
 			{{song.title}}
 
-			{{star-rating rating=song.rating item=song onClick="updateRating"}}
+			{{star-rating rating=song.rating item=song onClick=(action "updateRating")}}
 		</li>
 	{{/each}}
 </ul>

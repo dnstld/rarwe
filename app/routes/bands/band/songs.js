@@ -13,14 +13,8 @@ export default Ember.Route.extend({
 			var title = controller.get('title');
 			var song = Song.create({ title: title, band: band });
 
-			band.get('songs').pushObject('song');
+			band.get('songs').pushObject(song);
 			controller.set('title', '');
-		},
-		updateRating: function(params) {
-			var song = params.item,
-					rating = params.rating;
-
-			song.set('rating', rating);
 		}
 	}
 });
